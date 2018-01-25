@@ -18,6 +18,7 @@ public class Test_Example1 extends BasePage {
         driver.findElement(By.xpath("//a[text()='ALTEN - Technology consulting and engineering']")).click();
         driver.findElement(By.className("logo")).isDisplayed();
         Thread.sleep(2000);
+        Thread.sleep(2000);
         driver.findElement(By.id("footer")).isDisplayed();
         String ex = driver.findElement(By.id("footer")).getText();
         System.out.print(ex);
