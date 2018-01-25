@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 public class Test_Example1 extends BasePage {
     @Test
 
-    public void main() throws InterruptedException {
+    public void main() {
 
         driver.get("https://www.google.pt/");
         System.out.print(driver.getTitle());
@@ -17,8 +17,6 @@ public class Test_Example1 extends BasePage {
         //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//a[text()='ALTEN - Technology consulting and engineering']")).click();
         driver.findElement(By.className("logo")).isDisplayed();
-        Thread.sleep(2000);
-        Thread.sleep(2000);
         driver.findElement(By.id("footer")).isDisplayed();
         String ex = driver.findElement(By.id("footer")).getText();
         System.out.print(ex);
