@@ -8,24 +8,6 @@
     <artifactId>Maven-Project</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
-
-        <profiles>
-            <profile>
-                <id>sonar</id>
-                <activation>
-                    <activeByDefault>true</activeByDefault>
-                </activation>
-                <properties>
-                    <!-- Optional URL to server. Default value is http://localhost:9000 -->
-                    <sonar.host.url>
-                        http://10.0.2.15:9000/projects
-                    </sonar.host.url>
-                </properties>
-            </profile>
-        </profiles>
-
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
