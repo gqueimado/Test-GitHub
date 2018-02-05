@@ -12,6 +12,7 @@ public class BasePage {
     @BeforeClass
     public static void Base () {
 
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\Goncalo\\Desktop\\drivers\\chromedriver.exe");
         driver = new ChromeDriver();
 
         /*System.setProperty("webdriver.ie.driver","C:\\Users\\Goncalo\\Desktop\\drivers\\IEDriverServer.exe");
