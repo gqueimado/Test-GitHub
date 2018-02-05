@@ -7,7 +7,7 @@ public class Test_Example7 {
     @Test
 
     public void main() {
-        
+
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.google.pt/");

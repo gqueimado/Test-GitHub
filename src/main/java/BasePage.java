@@ -2,6 +2,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -11,9 +12,8 @@ public class BasePage {
     @BeforeClass
     public static void Base () {
 
-
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        /*driver = new ChromeDriver();
+        driver.manage().window().maximize();*/
 
         /*System.setProperty("webdriver.ie.driver","C:\\Users\\Goncalo\\Desktop\\drivers\\IEDriverServer.exe");
         DesiredCapabilities capability = DesiredCapabilities.internetExplorer();
@@ -23,9 +23,9 @@ public class BasePage {
         driver=new InternetExplorerDriver();
         driver.manage().window().maximize();*/
 
-        /*System.setProperty("webdriver.gecko.driver","C:\\Users\\Goncalo\\Desktop\\drivers\\geckodriver.exe");
+       
         driver = new FirefoxDriver();
-        driver.manage().window().maximize();*/
+        driver.manage().window().maximize();
 
     }
     @AfterClass
