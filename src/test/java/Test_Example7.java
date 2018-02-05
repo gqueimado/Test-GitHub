@@ -3,13 +3,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Test_Example7 {
+public class Test_Example7 extends BasePage{
     @Test
 
     public void main() {
 
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
         driver.get("https://www.google.pt/");
         driver.findElement(By.xpath("//body[@id='gsr']")).isDisplayed();
         driver.findElement(By.xpath("//input[@id='lst-ib']")).sendKeys("alten uk");
