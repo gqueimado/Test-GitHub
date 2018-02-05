@@ -4,11 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class Test_Example6 extends BasePage {
+public class Test_Example6  {
 
     @Test
     public void main() {
-
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\Goncalo\\Desktop\\drivers\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
         driver.get("http://toolsqa.wpengine.com/automation-practice-form/");
         driver.findElement(By.partialLinkText("Partial")).click();
         String Submit = driver.findElement(By.tagName("button")).toString();
