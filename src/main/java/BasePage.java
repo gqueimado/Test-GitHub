@@ -11,7 +11,7 @@ public class BasePage {
     @BeforeClass
     public static void Base () {
 
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\goncalo.queimado\\Desktop\\Drivers\\chromedriver.exe");
+
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 

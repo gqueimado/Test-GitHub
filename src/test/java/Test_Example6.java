@@ -9,7 +9,6 @@ public class Test_Example6 {
     @Test
     public void main() {
 
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Goncalo\\Desktop\\drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://toolsqa.wpengine.com/automation-practice-form/");
