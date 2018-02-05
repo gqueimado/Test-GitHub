@@ -21,8 +21,7 @@ public class BasePage {
 
         driver=new InternetExplorerDriver();
         */
-
-        System.setProperty("webdriver.gecko.driver","C:\\Users\\goncalo.queimado\\Desktop\\Drivers\\geckodriver.exe");
+        
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
 
