@@ -12,7 +12,7 @@ public class BasePage {
     @BeforeClass
     public static void Base () {
 
-        /*driver = new ChromeDriver();*/
+        driver = new ChromeDriver();
 
         /*System.setProperty("webdriver.ie.driver","C:\\Users\\Goncalo\\Desktop\\drivers\\IEDriverServer.exe");
         DesiredCapabilities capability = DesiredCapabilities.internetExplorer();
@@ -22,8 +22,8 @@ public class BasePage {
         driver=new InternetExplorerDriver();
         */
 
-        System.setProperty("webdriver.gecko.driver","C:\\Users\\Goncalo\\Desktop\\drivers\\geckodriver.exe");
-        driver = new FirefoxDriver();
+        /*System.setProperty("webdriver.gecko.driver","C:\\Users\\Goncalo\\Desktop\\drivers\\geckodriver.exe");
+        driver = new FirefoxDriver();*/
         driver.manage().window().maximize();
 
     }
