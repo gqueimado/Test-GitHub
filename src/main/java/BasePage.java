@@ -12,15 +12,17 @@ public class BasePage {
     @BeforeClass
     public static void Base () {
 
-        /*driver = new ChromeDriver();
+        /*driver = new ChromeDriver();*/
 
         /*System.setProperty("webdriver.ie.driver","C:\\Users\\Goncalo\\Desktop\\drivers\\IEDriverServer.exe");
         DesiredCapabilities capability = DesiredCapabilities.internetExplorer();
         capability.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
         capability.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING, true);
 
-        driver=new InternetExplorerDriver();*/
+        driver=new InternetExplorerDriver();
+        */
 
+        System.setProperty("webdriver.gecko.driver","C:\\Users\\goncalo.queimado\\Desktop\\Drivers\\geckodriver.exe");
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
 
