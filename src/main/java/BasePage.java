@@ -33,7 +33,7 @@ public class BasePage {
 
         driver.close();
     }
-    
+
     
     public static void ChangeTab() {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
