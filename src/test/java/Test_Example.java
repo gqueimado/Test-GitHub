@@ -8,7 +8,7 @@ public class Test_Example  {
 
     public void main() {
 
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\goncalo.queimado\\Desktop\\Drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\Goncalo\\Desktop\\drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.pt/");
         driver.findElement(By.xpath("//body[@id='gsr']")).isDisplayed();
