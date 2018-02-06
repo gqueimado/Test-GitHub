@@ -8,7 +8,7 @@ public class Test_Example6  {
 
     @Test
     public void main() {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Goncalo\\Desktop\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\goncalo.queimado\\Desktop\\Drivers\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://toolsqa.wpengine.com/automation-practice-form/");
         driver.findElement(By.partialLinkText("Partial")).click();
